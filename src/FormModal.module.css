@@ -1,0 +1,74 @@
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 100;
+  background: rgba(0, 0, 0, 0.75);
+}
+
+.modal {
+  position: fixed;
+  top: 20vh;
+  left: 10%;
+  width: 80%;
+  z-index: 100;
+  overflow: hidden;
+}
+
+.header {
+  text-align: center;
+  background: #effff4;
+  padding: 0.5rem;
+}
+
+.header p {
+  margin: 0;
+  color: #008a45;
+  font-size: var(--d-xs);
+}
+
+.content {
+  padding: 1rem;
+}
+
+.content input {
+  background-color: #f7f8fa;
+}
+
+.buttons button {
+  background: #ffffff;
+  border: 0.6px solid #d9d9db;
+  box-sizing: border-box;
+  border-radius: 2px;
+  color: black;
+}
+
+.buttons button:first-child {
+  border-radius: 20px;
+  background: #2f6ce5;
+  color: white;
+}
+
+.actions {
+  padding: 1rem;
+  display: flex;
+  justify-content: flex-end;
+}
+
+@media (min-width: 768px) {
+  .modal {
+    left: calc(50% - 20rem);
+    width: 40rem;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .content img {
+    display: none;
+  }
+  .col-2 {
+    display: none;
+  }
+}
